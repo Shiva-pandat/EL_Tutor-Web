@@ -1,0 +1,121 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  font: family NunitoSans_ 10pt Regular,NunitoSans_ 10pt medium,NunitoSans_ 10pt SemiBold,NunitoSans_ 10pt Bold;
+  box-sizing: border-box;
+}
+ 
+.faqs .accordion-button {
+  color: black;
+  border-bottom: none;
+}
+
+.faqs .accordion-button:not(.collapsed) {
+  color: black;
+  background-color: transparent !important;
+}
+
+.faqs .accordion-button:focus {
+  box-shadow: none;
+}
+
+.faqs .accordion-item {
+  border-bottom: 0.5px solid grey;
+}
+
+.faqs .accordion-body {
+  border-bottom: none;
+  padding-bottom: 1rem;
+}
+
+.faqs .accordion-button::after {
+  flex-shrink: 0;
+  width: 1.75rem;
+  height: 1.75rem;
+  margin-left: auto;
+  content: "";
+  background-image: url('../public/assets/images/open.png');
+  background-repeat: no-repeat;
+  background-size: 1.75rem;
+  transition: transform 0.2s ease-in-out;
+  filter: brightness(0);
+}
+
+.faqs .accordion-button:not(.collapsed)::after {
+ /* background-image: url('../public/assets/images/close.png');  */
+transform: rotate(-135deg);
+
+}
+
+@media screen and (max-width: 768px) {
+  .main_change{
+    font-size: 24px;
+  }
+  .main_change_one{
+    margin-bottom: 0px !important;
+  }
+  #AboutUs{
+    margin-top:10px !important;
+  }
+  .main_chooseUs{
+    margin-top: 0 !important;
+  }
+  .bid_chooseUs{
+    text-align: justify !important;
+    hyphens: auto;
+    margin-bottom: 0px !important;
+    font-size: 14px !important;
+  }
+  .main_bidchooseUs{
+    margin-bottom: 0px !important;
+    font-size: 14px;
+  }
+  .teacher_choose{
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .main_Customersays{
+    margin-top: 0 !important;
+    margin-bottom: 0px !important;
+  }
+  .Customer_Says{
+    margin-bottom: 0px !important;
+  }
+  .contact_us_green{
+     margin-top: 2px !important;
+     padding-top: 1rem !important;
+  }
+  .contact{
+    margin-bottom: 0px !important;
+    font-size: 14px;
+  }
+  .main_contact{
+      margin-bottom: 0.5rem !important;
+  }
+  .Bid_contact{
+    margin-top: 1rem !important;
+  }
+  .main_form-box{
+    margin-top: 15px !important;
+  }
+  .form_contact{
+    margin-top: 5px;
+  }
+  .ASKQUES{
+    /* margin-top: 0px !important; */
+    margin-bottom: 0px !important;
+  }
+  .main_ask_ques{
+    margin-top: 0px !important;
+  }
+  .footer{
+    gap: 0 !important;
+  }
+  .carousel_img1 img{
+    height: 40vh !important;
+  }
+  .carousel_img1 .heading{
+    margin-top: 1.5rem !important;
+  }
+}
